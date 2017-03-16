@@ -48,6 +48,10 @@ Style/Send:
 Style/RegexpLiteral:
   EnforcedStyle: slashes
 
+Lint/Void:
+  Description: 'Possible use of operator/literal/variable in void context.'
+  Enabled: false
+
 # ##### DISABLED
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
