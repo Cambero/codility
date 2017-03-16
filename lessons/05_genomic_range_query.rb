@@ -6,7 +6,7 @@ def solution(s, p, q)
 
   prefix_sum = generate_prefix_sum(s)
   # check for increments in order
-  result = Array.new(p.size)
+  result = []
 
   p.size.times do |i|
     p_index = p[i]
@@ -15,6 +15,7 @@ def solution(s, p, q)
     prefix_sum.keys.each do |letter|
       if prefix_sum[letter][p_index] < prefix_sum[letter][q_index]
         result << factors[letter]
+        break
       end
     end
     # if prefix_sum['A'][p_index] < prefix_sum['A'][q_index]
