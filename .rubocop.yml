@@ -48,7 +48,6 @@ Style/Send:
 Style/RegexpLiteral:
   EnforcedStyle: slashes
 
-
 # ##### DISABLED
 Style/AutoResourceCleanup:
   Description: 'Suggests the usage of an auto resource cleanup version of a method (if available).'
@@ -59,16 +58,14 @@ Style/CollectionMethods:
   StyleGuide: '#map-find-select-reduce-size'
   Enabled: true
 
-
 Style/MethodCalledOnDoEndBlock:
   Description: 'Avoid chaining a method call on a do...end block.'
   StyleGuide: '#single-line-blocks'
-  Enabled: true
+  Enabled: false
 
 Style/OptionHash:
   Description: "Don't use option hashes when you can use keyword arguments."
   Enabled: true
-
 
 Style/StringMethods:
   Description: 'Checks if configured preferred methods are used over non-preferred.'
